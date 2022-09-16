@@ -1,26 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link rel="stylesheet" href="estilo.css" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link
-			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap"
-			rel="stylesheet"
-	/>
-	<title></title>
+	<style>
+		.grid-container {
+			width: 100%;
+			display: grid;
+			grid-template-areas:'1 2 3 4 5 6 7 8 9 10 11 12 13';
+			background-color: #212327;
+			padding: 10px;
+		}
+
+		.grid-container > div {
+			background-color: rgb(33, 35, 39);
+			text-align: center;
+			font-size: 18px;
+			font-family: 'Roboto', sans-serif;
+			color: white;
+		}
+
+		.navImages{
+			max-width:1em;
+			max-height:1em;
+		}
+
+		.bodyStyle{
+			background-color: #212327;
+		}
+
+		.iPhoneImg{
+			padding-top: 0.5em;
+			display: block;
+			width: 100%;
+		}
+
+		.container {
+			position: relative;
+			text-align: center;
+			color: white;
+		}
+
+		.centered {
+			position: absolute;
+			top: 10%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 4em;
+
+		}
+
+		.centeredDown {
+			position: absolute;
+			top: 18%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 2em;
+
+		}
+
+		.centeredDownDown {
+			position: absolute;
+			top: 23%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 1em;
+
+		}
+
+		.linkLeft{
+			text-decoration: none;
+			position: absolute;
+			top: 33%;
+			left: 45%;
+			transform: translate(-50%, -50%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.5em;
+			color: #4c95f7;
+
+		}
+
+		.linkRight{
+			text-decoration: none;
+			position: absolute;
+			top: 33%;
+			left: 55%;
+			transform: translate(-50%, -50%);
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.5em;
+			color: #4c95f7;
+
+		}
+
+		footer {
+			text-align: center;
+			padding: 3px;
+			background-color: #f5f5f7;
+			color: #464649;
+			grid-template-areas: 'myArea myArea myArea myArea myArea myArea myArea myArea myArea myArea myArea myArea myArea';
+		}
+
+		.footContainerBold {
+			color: #1d1d1f;
+			width: 100%;
+			display: grid;
+			grid-template-areas:'1 2 3 4 5';
+			background-color: #f5f5f7;
+			padding: 10px;
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+		}
+
+		.footContainer{
+			width: 100%;
+			display: grid;
+			grid-template-areas:'1 2 3 4 5';
+			background-color: #f5f5f7;
+			padding: 10px;
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+		}
+
+
+
+
+
+
+	</style>
 </head>
-
-<body>
-
+<body class = 'bodyStyle'>
 
 
+<div class="grid-container">
+	<div class="item1"><img class = "navImages" src="logo.png" alt=""></div>
+	<div class="item2">Store</div>
+	<div class="item3">Mac</div>
+	<div class="item4">iPad</div>
+	<div class="item5">iPhone</div>
+	<div class="item6">Watch</div>
+	<div class="item7">Airpods</div>
+	<div class="item8">TV & Home</div>
+	<div class="item9">Only on Apple</div>
+	<div class="item10">Accessories</div>
+	<div class="item11">Support</div>
+	<div class="item12"><img class = "navImages" src="searchIcon.png" alt=""></div>
+	<div class="item13"><img class = "navImages" src="bagIcon.png" alt=""></div>
+
+</div>
+
+<div class="container">
+	<img class = 'iPhoneImg' src="iPhone14Pro.jpg" alt="">
+	<div class="centered">iPhone 14 Pro</div>
+	<div class="centeredDown">Pro.Beyond.</div>
+	<div class="centeredDownDown">Available starting 9.16.</div>
+	<a class ="linkLeft" href="https://www.apple.com/iphone-14-pro/">Learn more</a>
+	<a class ="linkRight" href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_14_pro">Pre-Order</a>
+
+
+</div>
+
+<div class="container">
+	<img class = 'iPhoneImg' src="airPodsPro.png" alt="">
+	<div class="centered">AirPodsPro</div>
+	<div class="centeredDown">Rebuilt from the sound up.</div>
+	<div class="centeredDownDown">Available starting 9.23.</div>
+	<a class ="linkLeft" href="https://www.apple.com/airpods-pro/">Learn more</a>
+	<a class ="linkRight" href="https://www.apple.com/us/shop/goto/product/MQD83/">Pre-Order</a>
+</div>
+
+
+<footer>
+
+	<div class="footContainerBold">
+		<div class="item1">Shop and Learn</div>
+		<div class="item2">Services</div>
+		<div class="item2">Apple Store</div>
+		<div class="item2">For Business</div>
+		<div class="item2">Apple Values</div>
+
+	</div>
+
+	<div class="footContainer">
+		<div class="item1">Store</div>
+		<div class="item2">Apple Music</div>
+		<div class="item2">Find a Store</div>
+		<div class="item2">Apple and Business</div>
+		<div class="item2">Accessibility</div>
+	</div>
+
+	<div class="footContainer">
+		<div class="item1">Mac</div>
+		<div class="item2">Apple TV+</div>
+		<div class="item2">Genius Bar</div>
+		<div class="item2">Shop for Business</div>
+		<div class="item2">Education</div>
+	</div>
+
+	<div class="footContainer">
+		<div class="item1">iPad</div>
+		<div class="item2">Apple Fitness+</div>
+		<div class="item2">Today at Apple</div>
+		<div class="item2"> ................. </div>
+		<div class="item2">Enviroment</div>
+	</div>
+
+	<div class="footContainer">
+		<div class="item1">iPhone</div>
+		<div class="item2">Apple News+</div>
+		<div class="item2">Apple Camp</div>
+		<div class="item2">Apple and Education</div>
+		<div class="item2">Inclusion and Diversity</div>
+	</div>
+
+	<div class="footContainer">
+		<div class="item1">Watch</div>
+		<div class="item2">Apple Arcade</div>
+		<div class="item2">Apple Store App</div>
+		<div class="item2">Shop for K-12</div>
+		<div class="item2">Privacy</div>
+	</div>
 
 
 
 
+
+
+</footer>
 
 </body>
 </html>
+
+
+
