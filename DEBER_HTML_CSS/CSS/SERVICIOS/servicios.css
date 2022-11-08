@@ -1,0 +1,35 @@
+body{
+    background-color: #2c2d39;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.tag {
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.divSer{
+    padding-left: 25%;
+    font-family: Inter,sans-serif ;
+    font-size: 2em;
+    font-weight: 700;
+    color: #5468AB;
+}
+
+.imgServicio{
+    display: flex;
+    justify-content: center;
+    position: center;
+    text-align: center;
+    opacity: 100%;
+    padding-left: 2.5em;
+}
